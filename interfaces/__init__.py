@@ -1,2 +1,1 @@
-from .joga_dados import JogaDados
-from .escolhe_pontos import EscolhePontos
+from .estilo import Estilo

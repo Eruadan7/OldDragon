@@ -1,8 +1,7 @@
-from estilos import *
-from interfaces import Estilo
+from abc import ABC, abstractmethod
 
-class Personagem:
-    def __init__(self, estilo: Estilo):   
+class Personagem(ABC):
+    def __init__(self):   
         self.atributos = {
             "forca": None,
             "destreza": None,
@@ -11,11 +10,6 @@ class Personagem:
             "sabedoria": None,
             "carisma": None
         }
-        self.estilo = estilo
-
-        valores = self.estilo.gerar_atributos()
-        for i, chave in enumerate(self.atributos, start=0):
-            self.atributos[chave] = valores[i]
 
     def mostrar_valores_atributos(self):
         for i, (nome, valor) in enumerate(self.atributos.items(), start=1):

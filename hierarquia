@@ -1,3 +1,0 @@
-As interfaces estão no mesmo nível de Personagem, estando no nível mais raso;
-Os estilos dependem das duas últimas;
-Na main, só importamos e instanciamos os estilos, chamando os métodos.

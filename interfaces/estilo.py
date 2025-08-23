@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class JogaDados(ABC):
+class Estilo(ABC):
     @abstractmethod
-    def jogar_dados(self):
+    def gerar_atributos(self):
         pass
