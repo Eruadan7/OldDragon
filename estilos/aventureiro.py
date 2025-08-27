@@ -1,4 +1,4 @@
-from interfaces import Estilo
+from bases import Estilo
 from utils import jogar_dados, escolher_atributos
 
 class Aventureiro(Estilo):

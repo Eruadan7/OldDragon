@@ -9,10 +9,14 @@
 ### 2
 
 - Mudanças na estrutura do projeto
-- Resolvi transformar Personagem na classe principal, em vez de servir apenas de herança, pos estava indo pelo caminho errado
+- Resolvi transformar Personagem na classe principal, em vez de servir apenas de herança, pois estava indo pelo caminho errado. Ela tem como parâmetro "estilo: Estilo"
 - Criei uma interface Estilo com o método abstrato gerar_atributos
 - Os estilos herdam essa interface e implementam o método conforme sua necessidade
 - Armazenei as funções que se repetem em um arquivo utils.py
-- A estrutura ficou assim, do nível mais alto até a raiz:
-    interfaces -> estilos e utils.py -> Personagem e main
+
+### 3
+
+- Foi adicionada a classe abstrata Raca que agora fica no arquivo bases, junto da interface estilo
+- Dentro da pasta racas, cada raça particular herda de Raca e implementa seus próprios atributos
+- Personagem agora contém também uma das raças, que será escolhida na instanciação
 

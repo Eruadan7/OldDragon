@@ -1,4 +1,4 @@
-from interfaces import Estilo
+from bases import Estilo
 from utils import jogar_dados
 
 class Classico(Estilo):

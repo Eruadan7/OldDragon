@@ -1,4 +1,4 @@
-from interfaces import Estilo
+from bases import Estilo
 from utils import escolher_atributos
 import random
 
