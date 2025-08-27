@@ -18,5 +18,11 @@
 
 - Foi adicionada a classe abstrata Raca que agora fica no arquivo bases, junto da interface estilo
 - Dentro da pasta racas, cada raça particular herda de Raca e implementa seus próprios atributos
-- Personagem agora contém também uma das raças, que será escolhida na instanciação
+- Personagem agora instancia uma das raças para utilizar seus atributos
+
+  ### 4
+  
+- Adição da classe abstrata Classe. Como há subclasses aqui, existe sempre uma intermediária entre os tipos de classe. Ex: Classe->BaseGuerreiro->Guerreiro. Também são utilizadas como composição em Personagem
+
+
 
