@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Criar Novo Personagem{% endblock %}
+
+{% block content %}
+    <form method="post" action="{{ url_for('escolher_atributos') }}">
+        {#<div id="opcoes-extra" style="display: none;">#}
+            <h3>Atributos</h3>
+            <ul id="atributos-lista">
+                <li>Força: <span class="valor"></span></li>
+                <li>Destreza: <span class="valor"></span></li>
+                <li>Constituição: <span class="valor"></span></li>
+                <li>Inteligência: <span class="valor"></span></li>
+                <li>Sabedoria: <span class="valor"></span></li>
+                <li>Carisma: <span class="valor"></span></li>
+            </ul>
+
+            <h3>Selecione os valores</h3>
+            <div id="valores">
+                <button type="button" data-valor="{{ valores[0] }}">{{ valores[0] }}</button>
+                <button type="button" data-valor="{{ valores[1] }}">{{ valores[1] }}</button>
+                <button type="button" data-valor="{{ valores[2] }}">{{ valores[2] }}</button>
+                <button type="button" data-valor="{{ valores[3] }}">{{ valores[3] }}</button>
+                <button type="button" data-valor="{{ valores[4] }}">{{ valores[4] }}</button>
+                <button type="button" data-valor="{{ valores[5] }}">{{ valores[5] }}</button>
+            </div>
+
+            <!-- input escondido para enviar lista -->
+            <input type="hidden" name="atributos_ordem" id="atributos-ordem">
+
+            <br>
+            <button type="submit" id="enviar">OK</button>
+        {#</div>#}
+    </form>
+{% endblock %}

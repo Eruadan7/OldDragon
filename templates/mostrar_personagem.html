@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Personagem Criado:{% endblock %}
+
+{% block content %}
+    {% if personagem %}
+        <h2>Personagem Criado</h2>
+        <h3><strong>Nome:</strong> {{ personagem.nome }}</h3>
+        <h3><strong>Estilo de jogo:</strong> {{ personagem.estilo.nome }}</h3>
+        <table border="1">
+            <tr><th>Atributo</th><th>Valor</th></tr>
+            {% for nome, valor in personagem.atributos.items() %}
+            <tr>
+                <td>{{ nome }}</td>
+                <td>{{ valor }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        
+        <h3><strong>Raça:</strong> {{ personagem.raca.nome }}</h3>
+        <div style="display: flex; gap: 20px;">
+            <div>
+                <table border="1">
+                    <tr><th>Habilidade de Raça</th><th>Valor</th></tr>
+                    {% for nome, valor in personagem.raca.habilidades.items() %}
+                    <tr>
+                        <td>{{ nome }}</td>
+                        <td>{{ valor }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div>
+                <tr>Bônus de Raça:</tr>
+                    <ul style="margin: 0; padding-left: 20px;">
+                        {% for b in personagem.raca.bonus %}
+                            <li>{{ b }}</li>
+                        {% endfor %}
+                    </ul>
+                
+            </div>
+        </div>
+        <br>
+        <h3><strong>Classe:</strong> {{ personagem.classe.nome }}</h3>
+        <div style="display: flex; gap: 20px;">
+            <div>
+                <table border="1">
+                    <tr><th>Estatistica</th><th>Valor</th></tr>
+                    {% for nome, valor in personagem.classe.estatisticas.items() %}
+                    <tr>
+                        <td>{{ nome }}</td>
+                        <td>{{ valor }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div>
+                <table border="1">
+                    <tr><th>Habilidade de Classe</th><th>Valor</th></tr>
+                    {% for nome, valor in personagem.classe.habilidades_classe.items() %}
+                    <tr>
+                        <td>{{ nome }}</td>
+                        <td>{{ valor }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <div>
+                <table border="1">
+                    <tr><th>Item</th><th>Restrições</th></tr>
+                    {% for nome, valor in personagem.classe.limite_itens.items() %}
+                    <tr>
+                        <td>{{ nome }}</td>
+                        <td>{{ valor if valor[0] is not none else "Nenhuma" }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        <br>
+    {% endif %}
+{% endblock %}

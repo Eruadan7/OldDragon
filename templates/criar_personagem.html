@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Criação de Personagem{% endblock %}
+
+{% block content %}
+    {% if not nome %}
+    <h2>Criação de Personagem</h2>
+
+        <form method="post">
+            <label>Escolha um Nome: <input type="text" name="nome" required></label>
+            <select id="estilo" name="estilo">
+                <option value="">--Selecione o estilo de jogo--</option>
+                <option value="clássico">classico</option>
+                <option value="aventureiro">Aventureiro</option>
+                <option value="heróico">Heroico</option>
+            </select><br><br>
+            
+ 
+            <button type="submit">OK</button>
+        </form>
+    {% endif %}
+{% endblock %}

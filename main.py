@@ -1,9 +1,8 @@
-from personagem import *
-from classes_especiais import *
+from app import *  # importa a classe pai (ou direto de onde você definiu)
+# monta o map dinâmico
 
-p1 = Personagem(estilo=Classico(), raca=Humano(), classe=Guerreiro())
-p1.mostrar_atributos_personagem()
-print("")
-p1.mostrar_atributos_raca()
-print("")
-p1.mostrar_atributos_classe()
+estilos_map = {cls().nome.lower(): cls for cls in Estilo.__subclasses__()}
+
+print("disponíveis no map:")
+for chave, classe in estilos_map.items():
+    print(f"{chave} -> {Estilo.__name__}")

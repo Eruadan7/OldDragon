@@ -24,5 +24,4 @@
   
 - Adição da classe abstrata Classe. Como há subclasses aqui, existe sempre uma intermediária entre os tipos de classe. Ex: Classe->BaseGuerreiro->Guerreiro. Também são utilizadas como composição em Personagem
 
-
-
+### nota: achar um modo de padronizar o alinhamento, talvez sendo de Personagem, mas podendo ser modificado caso uma Raça ou Classe o modifique.

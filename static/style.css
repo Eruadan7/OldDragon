@@ -1,0 +1,48 @@
+/* Fonte medieval/fantasia */
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+body {
+    font-family: 'MedievalSharp', cursive;
+    background-color: #1e1b18;  /* escuro, tipo tavern/medieval */
+    color: #f5f0e1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3b2f2f; /* tom de madeira/escuro */
+    padding: 1rem 2rem;
+    border-bottom: 4px solid #a67c52; /* detalhe dourado */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    color: #f5d67a; /* dourado medieval */
+    text-shadow: 1px 1px #000;
+}
+
+nav a {
+    color: #f5f0e1;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5d67a;
+    text-shadow: 0 0 3px #f5d67a;
+}
+
+main {
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+footer {
+    background-color: #3b2f2f;
+    color: #f5d67a;
+    text-align: center;
+    padding: 1rem;
+    border-top: 4px solid #a67c52;
+}
