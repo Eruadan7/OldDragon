@@ -20,8 +20,10 @@
 - Dentro da pasta racas, cada raça particular herda de Raca e implementa seus próprios atributos
 - Personagem agora instancia uma das raças para utilizar seus atributos
 
-  ### 4
+### 4
   
 - Adição da classe abstrata Classe. Como há subclasses aqui, existe sempre uma intermediária entre os tipos de classe. Ex: Classe->BaseGuerreiro->Guerreiro. Também são utilizadas como composição em Personagem
 
-### nota: achar um modo de padronizar o alinhamento, talvez sendo de Personagem, mas podendo ser modificado caso uma Raça ou Classe o modifique.
+### 5
+
+- FrontEnd simples para criação de personagem e inserção no banco de dados

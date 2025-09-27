@@ -13,14 +13,24 @@ class Personagem:
         self.nome = nome
         
         self.estilo = estilo
+        self.nome_estilo = estilo.nome
 
-        self.raca = raca
+        self.raca = raca.__dict__
 
-        self.classe = classe
+        self.classe = classe.__dict__
        
     def receber_valores(self, valores):
         for i, chave in enumerate(self.atributos, start=0):
             self.atributos[chave] = valores[i]
+
+    def to_dict(self):
+        return {
+            "nome": self.nome,
+            "atributos": self.atributos,
+            "estilo": self.estilo.nome,
+            "raca": self.raca,
+            "classe": self.classe
+        }
         '''
         
         
