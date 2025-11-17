@@ -1,0 +1,56 @@
+{
+    "nome": "gabriel",
+    "atributos": {
+        "forca": 17,
+        "destreza": 17,
+        "constituicao": 9,
+        "inteligencia": 9,
+        "sabedoria": 13,
+        "carisma": 13
+    },
+    "estilo": "Clássico",
+    "raca": {
+        "nome": "Anão",
+        "habilidades": {
+            "movimento": 6,
+            "infravisao": 18,
+            "alinhamento": "ordem"
+        },
+        "bonus": [
+            "mineracao",
+            "vigor",
+            "armas_grandes",
+            "inimizade"
+        ]
+    },
+    "classe": {
+        "nome": "Bárbaro",
+        "estatisticas": {
+            "nivel": 1,
+            "xp": 0,
+            "pontos_vida": 10,
+            "base_ataque": 1,
+            "jogada_protecao": 5,
+            "xp_especial": 0
+        },
+        "habilidades_classe": {
+            "Aparar": 1,
+            "maestria_arma": 1,
+            "vigor_barbaro": 1,
+            "talentos_selvagens": 3,
+            "surpresa_selvagen": 6,
+            "Forca_totem": 10
+        },
+        "limite_itens": {
+            "armas": [
+                null
+            ],
+            "armaduras": [
+                "Não-couro"
+            ],
+            "magicos": [
+                "todos"
+            ]
+        }
+    }
+}

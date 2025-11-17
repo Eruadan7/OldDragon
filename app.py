@@ -5,7 +5,7 @@ from model.estilos import *
 from model.racas import *
 from model.classes import*
 from model.classes_especiais import *
-from instance.config import colecao_personagens, adicionar_personagem
+from instance.salvar_json import salvar_personagem_json
 
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "chave-secreta"
@@ -113,7 +113,7 @@ def mostrar_personagem():
             # ainda não escolheu atributos → volta para escolher
             return redirect(url_for("escolher_atributos"))
     
-    adicionar_personagem(p1)
+    salvar_personagem_json(p1)
     return render_template("mostrar_personagem.html", personagem=p1)
 
 if __name__ == "__main__":

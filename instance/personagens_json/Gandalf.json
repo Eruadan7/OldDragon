@@ -1,0 +1,53 @@
+{
+    "nome": "Gandalf",
+    "atributos": {
+        "forca": 10,
+        "destreza": 15,
+        "constituicao": 12,
+        "inteligencia": 13,
+        "sabedoria": 9,
+        "carisma": 12
+    },
+    "estilo": "Aventureiro",
+    "raca": {
+        "nome": "Humano",
+        "habilidades": {
+            "movimento": 9,
+            "infravisao": 0,
+            "alinhamento": "qualquer"
+        },
+        "bonus": [
+            "aprendizado",
+            "adaptabilidade"
+        ]
+    },
+    "classe": {
+        "nome": "Mago",
+        "estatisticas": {
+            "nivel": 1,
+            "xp": 0,
+            "pontos_vida": 4,
+            "base_ataque": 0,
+            "jogada_protecao": 5,
+            "xp_especial": 0
+        },
+        "habilidades_classe": {
+            "magias_arcanas": 9,
+            "grimorio": [
+                "3 magias arcanas de primeiro círculo"
+            ],
+            "ler_magias": 1,
+            "detectar_magias": 1
+        },
+        "limite_itens": {
+            "armas": [
+                "grandes",
+                "medias"
+            ],
+            "armaduras": "todas",
+            "magicos": [
+                null
+            ]
+        }
+    }
+}
