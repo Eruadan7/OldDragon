@@ -14,5 +14,3 @@ def salvar_personagem_json(personagem):
 
     with open(arquivo, "w", encoding="utf-8") as f:
         json.dump(personagem.to_dict(), f, ensure_ascii=False, indent=4)
-
-    print(f"Personagem salvo em: {arquivo}")
